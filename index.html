@@ -1,111 +1,87 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h2>Text input fields</h2>
-
-<form>
-  <label for="username">First name:</label><br>
-  <input type="text" id="uname" name="uname" value="Chaitra"><br>
-  <label for="pword">Password:</label><br>
-  <input type="password" id="pword" name="pword" value="7122003">
-  <input type= "submit" value= "Sign in"/>
-  <input type= "reset"/>
-</form>
-
-<p>Note that the form itself is not visible.</p>
-
-<p>Also note that the default width of text input fields is 20 characters.</p>
-
-</body>
-</html>
-
-
+  <form>
+<fieldset>
+    <legend>Registration Form:</legend>
   
+<h1>Registration Form</h1>
 
-<!DOCTYPE html>
-<html>
-
-<body>
-
-  <h2>The form target attribute</h2>
-
-  <form action="/action_page.php" target="_blank">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="Chaitra"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Naikar"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>The form autocomplete attribute</h1>
-
-<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
-
-<p>Then, try to set autocomplete to "off".</p>
-
-<form action="/action_page.php" autocomplete="on">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
+   <label for="pnum">Phone Number:</label>
+  <input type="hidden" id="pnum" name="pnum"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="text" id="pwd" name="pwd"><br><br>
   <label for="email">Email:</label>
   <input type="text" id="email" name="email"><br><br>
-  <input type="submit" value="submit">
-</form>
+  
 
-</body>
-</html>
+    <h4>Select your Gender</h4>
+
+  <input type="radio" id="gender" name="Gender" value="Male">
+  <label for="gender">Male</label><br>
+  <input type="radio" id="gender" name="Gender" value="Female">
+  <label for="gender">Female</label><br>
+  <input type="radio" id="gender" name="Gender" value="other">
+  <label for="gender">other</label><br>
+<br>
+    <br>
+
+    
+<label for="ddress">Address:</label>
+  <input type="text" id="address" name="Adress"><br><br>
+    
+  
 
 
-<!DOCTYPE html>
-<html>
-<body>
+    <h4>Choose your Hobbies</h4>
+    
+  <input type="checkbox" id="Hobby1" name="Hobby1" value="Reading">
+  <label for="Hobby1"> Reading</label><br>
+  <input type="checkbox" id="Hobby2" name="Hobby2" value="Drawing">
+  <label for="Hobbye2">Drawing</label><br>
+  <input type="checkbox" id="Hobby3" name="Hobby3" value="Writing">
+  <label for="Hobby3"> Writing</label><br><br>
 
-<h1>The form novalidate attribute</h1>
+    <h4>Enter Your College Name</h4>
+  <textarea name="message" rows="5" cols="20"> </textarea>
+  <br><br>
 
-<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
 
-<form action="/action_page.php" validate>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <input type="submit">
-</form>
-
-<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>The select Element</h2>
-
-<p>The select element defines a drop-down list:</p>
+<h4>Resume upload</h4>
 
 <form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-      <option value="audi">Benz</option>
-      <option value="audi">Honda</option>
+  <label for="Resume">Select a file:</label>
+  <input type="file" id="Resume" name="Resume"><br><br>
+  <br>
+
+
+  <h4>The select Department</h4>
+
+
+
+  <label for="Department">Choose a Department:</label>
+  <select id="Department" name="Department">
+    <option value="CSE">CSE</option>
+    <option value="ISE">ISE</option>
+    <option value="E&C">E&C</option>
+    <option value="EEE">EEE</option>
+     <option value="MECH">MECH</option>
+     <option value="CIV">CIV</option>
+     <option value="ARCH TECH">ARCH TECH</option>
+     <option value="AERO">AERO</option>
   </select>
-  <input type="submit">
-</form>
+  <br>
+  <br>
+
+   <input type="submit" value="Submit">
+  <input type="reset">
+  
+     </fieldset>
+</form> 
+
 
 </body>
 </html>
-
 
